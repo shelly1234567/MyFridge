@@ -6,8 +6,8 @@ var ctrlFood = require('../controllers/food');
 // food
 router.get('/food', ctrlFood.foodDetail);
 router.post('/food', ctrlFood.foodCreate);
-router.get('/food/:foodid', ctrlFood.foodReadone);
-router.put('/food/:foodid', ctrlFood.foodUpdate);
-router.delete('/food', ctrlFood.foodDelete);
+router.get('/food/:foodid', ctrlFood.foodReadOne);
+router.put('/food/:foodid', ctrlFood.foodUpdateOne);
+router.delete('/food', ctrlFood.foodDeleteOne);
 
 module.exports = router;
